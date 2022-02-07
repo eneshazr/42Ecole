@@ -44,8 +44,8 @@ int main(void)
     char dest[40];
 	
     ft_memcpy(dest, str, 8);
-    printf("O: %s\n", dest);
-	printf("O: %s", memcpy(dest,str,8));
+    printf("%s\n", dest);
+    printf("%s", memcpy(dest,str,8));
 }
 */
 /*

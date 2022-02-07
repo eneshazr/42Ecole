@@ -39,6 +39,6 @@ int main()
     
     ft_bzero(str, 15);
     printf(": %s", str);
-    printf("\n: %s", bzero(str, 18));
+    printf("\n: %s", bzero(str, 15));
 }
 */

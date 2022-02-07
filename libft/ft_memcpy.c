@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-#include <stdio.h>
+
 memcpy, bir bellek bloğunu bir konumdan diğerine kopyalamak için kullanılır
 dest − içeriğin kopyalanacağı hedef dizinin işaretçisidir,
 void* türünde bir işaretçiye tipleme yapılır.
@@ -35,15 +35,19 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 }
 
 /*
+#include <stdio.h>
+#include <string.h>
+
 int main(void)
 {
     char str[] = "eglendiremediklerimizdenmisiniz";
     char dest[40];
 	
     ft_memcpy(dest, str, 8);
-    printf("O: %s", dest);
-} */
-
+    printf("O: %s\n", dest);
+	printf("O: %s", memcpy(dest,str,8));
+}
+*/
 /*
 n sıfır olana kadar döner ve
 dest'e src de ki karakterleri atar.

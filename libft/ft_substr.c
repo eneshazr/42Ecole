@@ -6,7 +6,7 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 12:11:59 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/11 16:31:04 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/14 16:24:14 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (str);
 }
 
-
+/*
 #include <stdlib.h>
 #include <stdio.h>
 int main()
@@ -44,3 +44,4 @@ int main()
 	str = ft_substr("Ferdi TAYFUR", 6, 5);
 	printf("%s\n", str);
 }
+*/

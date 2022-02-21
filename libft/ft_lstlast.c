@@ -1,45 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/11 12:11:59 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/21 11:21:09 by ehazir           ###   ########.fr       */
+/*   Created: 2022/02/21 10:16:52 by ehazir            #+#    #+#             */
+/*   Updated: 2022/02/21 11:14:40 by ehazir           ###   ########.TR       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+t_list	*ft_lstlast(t_list *lst)
 {
-	char	*str;
-	size_t	i;
-
-	if (!s)
-		return (NULL);
-	if ((size_t)start > ft_strlen(s))
-		return (ft_strdup(""));
-	str = malloc(sizeof(char) * (len + 1));
-	i = 0;
-	if (!str)
+	if (!lst)
 		return (0);
-	while (i < len)
-	{
-		str[i] = s[start + i];
-		i++;
-	}
-	str[i] = '\0';
-	return (str);
+	while (lst -> next != NULL)
+		lst = lst -> next;
+	return (lst);
 }
-
-/*
-int main()
-{
-	char *str;
-
-	str = ft_substr("Ferdi TAYFUR", 6, 6);
-	printf("%s\n", str);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 10:33:29 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/10 16:07:17 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/21 12:31:08 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ Hata durumunda NULL döndürür.
 int main()
 {
     int *a;
-    a = (int *) calloc(5, sizeof(int));
+    a = (int *) ft_calloc(5, sizeof(char));
     printf("%p - %d\n", a, *a);
 }
 */

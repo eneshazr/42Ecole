@@ -1,45 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/11 12:11:59 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/21 11:21:09 by ehazir           ###   ########.fr       */
+/*   Created: 2022/02/15 10:24:52 by ehazir            #+#    #+#             */
+/*   Updated: 2022/02/15 17:13:44 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	char	*str;
-	size_t	i;
+	int	i;
 
-	if (!s)
-		return (NULL);
-	if ((size_t)start > ft_strlen(s))
-		return (ft_strdup(""));
-	str = malloc(sizeof(char) * (len + 1));
 	i = 0;
-	if (!str)
-		return (0);
-	while (i < len)
+	if (!s)
+		return ;
+	while (s[i])
 	{
-		str[i] = s[start + i];
+		(*f)(i, &s[i]);
 		i++;
 	}
-	str[i] = '\0';
-	return (str);
 }
 
 /*
-int main()
+void	upper(unsigned int i, char* d)
 {
-	char *str;
-
-	str = ft_substr("Ferdi TAYFUR", 6, 6);
-	printf("%s\n", str);
+	int	a;
+	a = 0;
+	i = 0;
+	if (*d)
+	{
+		d[a] = d[a] - 32;
+	}
+}
+int	main()
+{
+	char test[] = "onur";
+	ft_striteri(test,upper);
+	printf("%s",test);
 }
 */

@@ -6,7 +6,7 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 12:37:15 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/16 17:26:04 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/21 11:21:51 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,16 @@ t_list	*ft_lstnew(void *content)
 	new->next = NULL;
 	return (new);
 }
+
+/*
+int main()
+{
+    char new1[] = "enes";
+	t_list new;
+    // new = (t_list *)malloc(sizeof(int));
+    //printf("%s", (char *)ft_lstnew(new1));
+	new = *ft_lstnew(new1);
+	printf("%p", new.next);
+
+}
+*/

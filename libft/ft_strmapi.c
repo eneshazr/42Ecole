@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/11 12:11:59 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/21 11:21:09 by ehazir           ###   ########.fr       */
+/*   Created: 2022/02/14 16:19:57 by ehazir            #+#    #+#             */
+/*   Updated: 2022/02/15 10:19:45 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
+	int		i;
 	char	*str;
-	size_t	i;
+	int		len;
 
-	if (!s)
-		return (NULL);
-	if ((size_t)start > ft_strlen(s))
-		return (ft_strdup(""));
-	str = malloc(sizeof(char) * (len + 1));
 	i = 0;
+	if (!s || !f)
+		return (0);
+	len = ft_strlen(s);
+	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (0);
-	while (i < len)
+	while (s[i])
 	{
-		str[i] = s[start + i];
+		str[i] = (*f)(i, s[i]);
 		i++;
 	}
 	str[i] = '\0';
@@ -35,11 +35,16 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 }
 
 /*
-int main()
+char	ft_print(unsigned int i, char c)
 {
-	char *str;
+	c = c - 32;
+	return (c);
+}
 
-	str = ft_substr("Ferdi TAYFUR", 6, 6);
-	printf("%s\n", str);
+#include "stdio.h"
+int	main()
+{
+	char y [] = "onur";
+	printf("%s",ft_strmapi(y,&ft_print));
 }
 */

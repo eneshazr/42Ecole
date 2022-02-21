@@ -1,45 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/11 12:11:59 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/21 11:21:09 by ehazir           ###   ########.fr       */
+/*   Created: 2022/02/15 10:54:27 by ehazir            #+#    #+#             */
+/*   Updated: 2022/02/15 12:27:30 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+void	ft_putstr_fd(char *s, int fd)
 {
-	char	*str;
-	size_t	i;
+	int	i;
 
-	if (!s)
-		return (NULL);
-	if ((size_t)start > ft_strlen(s))
-		return (ft_strdup(""));
-	str = malloc(sizeof(char) * (len + 1));
 	i = 0;
-	if (!str)
-		return (0);
-	while (i < len)
-	{
-		str[i] = s[start + i];
-		i++;
-	}
-	str[i] = '\0';
-	return (str);
+	if (s)
+		while (s[i])
+			write(fd, &s[i++], 1);
 }
 
 /*
 int main()
 {
-	char *str;
-
-	str = ft_substr("Ferdi TAYFUR", 6, 6);
-	printf("%s\n", str);
+    ft_putstr_fd("Ferdi TAYFUR", 1);
 }
 */

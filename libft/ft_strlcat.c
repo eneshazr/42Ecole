@@ -6,7 +6,7 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 16:39:22 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/07 17:00:48 by ehazir           ###   ########.tr       */
+/*   Updated: 2022/02/17 17:05:48 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dst[size_l] = '\0';
 	return (i + ft_strlen(src));
 }
-
 /*
 #include <stdio.h>
 #include <string.h>
@@ -40,7 +39,7 @@ int main()
     char dst[] = "aaaaa";
     
     printf("%lu\n", ft_strlcat(dst, src, 10));
-    printf("%s", dst);
+   // printf("%s", dst);
     printf("\n%lu", strlcat(dst, src, 5));
 }
 */

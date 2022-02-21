@@ -6,7 +6,7 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/14 11:06:47 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/14 13:55:45 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/18 17:06:54 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 #include <stdio.h>
  int main()
 {
-	printf("%s\n", ft_strtrim("yasbyas", "yas"));
+	printf("%s\n", ft_strtrim("yasbyas", "asy"));
 }
 */

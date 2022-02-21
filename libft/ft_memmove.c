@@ -6,7 +6,7 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 12:09:40 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/10 16:34:59 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/11 14:42:45 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,8 @@ int main()
     char src[] = "eglendiremediklerimizdenmisiniz";
     char dst[40];
     ft_memmove(dst, src, 3);
+	printf("%s", dst);
     memmove(dst, src, 3);
-    printf("%s", dst);
     printf("\n%s", dst);
 }
 */

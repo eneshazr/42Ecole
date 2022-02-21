@@ -6,7 +6,7 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 16:15:43 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/14 12:35:27 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/15 11:23:13 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ int main()
 {
     char str[] = "Ferdi";
     char str2[] = " TAYFUR";
-    printf("%lu\n", sizeof(char) * 11 + 1);
+    printf("%lu\n", sizeof(int) * 11 + 1);
     printf("%s\n", ft_strjoin(str, str2));
 }
 */

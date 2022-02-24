@@ -6,7 +6,7 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 12:58:18 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/21 12:33:20 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/24 12:56:52 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ int main()
 {
     int i = 0;
     char **a;
-    a = ft_split("muhammet.ali.durmus", '.');
+    a = ft_split("yazilim.furyasi", '.');
     printf("%s\n",a[2]);
     // printf("%s\n",a[1]);
     // printf("%s",a[2]);

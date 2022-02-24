@@ -6,15 +6,12 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 11:36:59 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/15 12:14:29 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/23 11:25:53 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-Değerin strlen ile uzunluğu hesaplanır ve write'de 3. parametreye koyar.
-Tüm değerler yazıldıktan sonra yeni satıra(\n) geçer.
-*/
+
 void	ft_putendl_fd(char *s, int fd)
 {
 	if (s == NULL || fd < 0)

@@ -6,9 +6,13 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/14 11:06:47 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/18 17:06:54 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/24 13:11:36 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+Stringin içinde gönderilen karakterleri atlar, kalan karakterleri verir.
+*/
 
 #include	"libft.h"
 
@@ -52,9 +56,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 
 /*
-#include <stdio.h>
- int main()
+int main()
 {
-	printf("%s\n", ft_strtrim("yasbyas", "asy"));
+	printf("%s\n", ft_strtrim("...yazilimfuryasi...", "."));
 }
 */

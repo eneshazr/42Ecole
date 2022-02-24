@@ -6,47 +6,36 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 15:21:05 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/14 15:57:17 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/24 13:01:59 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
- strLcpy hedefe her zaman tek bir NUL baytı yazar (boyut sıfır değilse)
- Ortaya çıkan dize kesilse bile NUL ile sonlandırılacağı garanti edilir
- Ayrıca, strNcpy'den farklı olarak, arabelleğin geri kalanını
- doldurmak için birden fazla NUL baytı yazmakla zaman kaybetmez.
- 
- NUL ile sonlandırılan src dizesinden dst'ye -1 karaktere kadar kopyalar
- sonucu NUL ile sonlandırır.
-
-*/
-
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t	i;
-	size_t	src_l;
+	size_t			i;
+	size_t			a;
+	unsigned char	*s;
 
 	i = 0;
-	src_l = ft_strlen(src);
-	if (!dstsize)
-		return (src_l);
-	while (src[i] != '\0' && i < dstsize)
+	a = 0;
+	s = (unsigned char *)src;
+	while (s[a] != '\0')
+		a++;
+	if (dstsize != 0)
 	{
-		dst[i] = src[i];
-		i++;
-	}
-	if (dstsize < src_l)
-		dst[dstsize - 1] = '\0';
-	else if (dstsize != 0)
+		while (s[i] != '\0' && i < dstsize - 1)
+		{
+			dst[i] = s[i];
+			i++;
+		}
 		dst[i] = '\0';
-	return (src_l);
+	}
+	return (a);
 }
 
 /*
-#include <stdio.h>
-#include <string.h>
 int main()
 {
     char src[] = "eglendiremediklerimizdenmisiniz";

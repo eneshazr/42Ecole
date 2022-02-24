@@ -6,7 +6,7 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 15:03:23 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/07 16:00:26 by ehazir           ###   ########.tr       */
+/*   Updated: 2022/02/24 12:54:47 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,10 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 }
 
 /*
-#include <stdio.h>
-#include <string.h>
 int main()
 {
-    char str[] = "eglendiremediklerimizdenmisiniz";
-    char str1[] = "aglendiremediklerinizdenim";
+    char str[] = "e";
+    char str1[] = "a";
 
 	printf("%d\n", ft_memcmp(str, str1, 1));
 	printf("%d", memcmp(str, str1, 1));

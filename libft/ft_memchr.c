@@ -6,44 +6,41 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 14:05:59 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/11 14:59:52 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/22 12:13:01 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-ilk geçtiği yeri arar ve bu bellek adresini gösteren bir
-işaretçi geri döndürür.
-Eğer str parametresi NULL bir işaretçi ise anlamsız
-bir sonuç elde edilir.
-
-str: Aramanın yapılacağı bellek bölgesini işaretçidir.
-c: Aranacak olan değeri gösterir. Değer int olarak verilir
-ancak fonksiyon değeri unsigned char bir değere çevirerek arama işlemi yapar.
-n: Ptr parametresi ile gösterilen bellek bölgesinde
-aranacak byte sayısını gösterir.
+Bir karakter dizisi içinde verilen karakteri bulduğu yerden
+itibaren geri döndürür.
 */
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const char	*str;
-	size_t		i;
+	unsigned char	*str;
+	size_t			i;
+	int				k;
 
-	str = (const char *)s;
+	str = (unsigned char *)s;
 	i = 0;
+	k = 0;
+	if (n == i)
+		return (NULL);
 	while (i < n)
 	{
-		if (str[i] == c)
-			return ((void *)(s + i));
+		if (str[i] == (unsigned char)c)
+			return (&str[i]);
+		else
+			k = 1;
 		i++;
 	}
-	return (0);
+	if (k == 1)
+		return (0);
+	else
+		return (&str[i]);
 }
 
-/*
-Program memchr() fonksiyonu ile bir karakter dizisi içinde
-'m' karakterini arar.
-*/
 /*
 #include <stdio.h>
 #include <string.h>

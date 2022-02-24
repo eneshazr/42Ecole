@@ -6,7 +6,7 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 16:37:58 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/07 16:37:59 by ehazir           ###   ########.tr       */
+/*   Updated: 2022/02/24 12:51:06 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,3 @@ int	ft_isdigit(int c)
 {
 	return (c >= 48 && c <= 57);
 }
-
-/*
-#include <stdio.h>
-int main()
-{
-    printf("%d", ft_isdigit('s'));
-}
-*/

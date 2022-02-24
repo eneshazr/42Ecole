@@ -6,10 +6,13 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 16:39:22 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/17 17:05:48 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/22 12:55:04 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+Src ve dstnin toplam uzunluğunu döndürür.
+*/
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
@@ -31,8 +34,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (i + ft_strlen(src));
 }
 /*
-#include <stdio.h>
-#include <string.h>
 int main()
 {
     const char src[] = "eglen";

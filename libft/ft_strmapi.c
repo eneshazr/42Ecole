@@ -6,7 +6,7 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/14 16:19:57 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/15 10:19:45 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/24 13:02:21 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,10 +41,9 @@ char	ft_print(unsigned int i, char c)
 	return (c);
 }
 
-#include "stdio.h"
 int	main()
 {
-	char y [] = "onur";
+	char y [] = "";
 	printf("%s",ft_strmapi(y,&ft_print));
 }
 */

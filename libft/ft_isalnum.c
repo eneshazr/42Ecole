@@ -6,7 +6,7 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 11:32:11 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/07 14:01:45 by ehazir           ###   ########.tr       */
+/*   Updated: 2022/02/24 12:50:39 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,3 @@ int	ft_isalnum(int str)
 		return (str);
 	return (0);
 }
-
-/*
-#include <stdio.h>
-int main()
-{
-    printf("%d", ft_isalnum('a'));
-}
-*/
-/* alfabetik ve sayısal değerler */

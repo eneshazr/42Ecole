@@ -6,21 +6,12 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 11:38:14 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/07 16:24:06 by ehazir           ###   ########.tr       */
+/*   Updated: 2022/02/23 11:35:39 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-str1: Karşılaştırma yapılacak ilk karakter diziyi gösteren işaretçidir.
-
-str2: Karşılaştırma yapılacak ikinci karakter dizisinigösteren işaretçidir.
-
-n: Karşılaştırma yapılacak karakter sayısını gösterir.
-
-gönderdiğin değeri N kadar karşılaştırır
-*/
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	unsigned char	*str1;

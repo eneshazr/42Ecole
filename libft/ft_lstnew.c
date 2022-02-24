@@ -6,21 +6,14 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 12:37:15 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/21 11:21:51 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/24 12:54:00 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"libft.h"
 
 /*
-typedef ifadesinin standart veri türleri (int, char vb.) dışında 
-kullanıcı kendi belirlediği isimle tanımlayabilir.
-Örn: typedef int armut;
-Program içinde int bir değişken tanımlamak için
-int ifadesi yerine armut ifadesini kullanabiliriz.
-
-Yapı, farklı veri türlerini bir grup altında toplayan kullanıcı
-tanımlı bir veri türüdür. İki veya daha fazla elemandan oluşur.
+yeni liste oluşturup içine content koyar
 */
 
 t_list	*ft_lstnew(void *content)
@@ -38,12 +31,12 @@ t_list	*ft_lstnew(void *content)
 /*
 int main()
 {
-    char new1[] = "enes";
+    char new1[] = "Ferdi TAYFUR";
 	t_list new;
     // new = (t_list *)malloc(sizeof(int));
     //printf("%s", (char *)ft_lstnew(new1));
 	new = *ft_lstnew(new1);
-	printf("%p", new.next);
+	printf("%s", new.content);
 
 }
 */

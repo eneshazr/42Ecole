@@ -6,19 +6,14 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 11:32:37 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/17 17:05:36 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/21 15:11:58 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-memcpy, bir bellek bloğunu bir konumdan diğerine kopyalamak için kullanılır
-dest − içeriğin kopyalanacağı hedef dizinin işaretçisidir,
-void* türünde bir işaretçiye tipleme yapılır.
-src − kopyalanacak veri kaynağına yönelik işaretçidir,
-void* türünde bir işaretçiye tip dökümü yapılır.
-n - kopyalanacak bayt sayısıdır.
+src'yi dest'e n kadar kopyalar.
 */
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
@@ -41,9 +36,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 }
 
 /*
-#include <stdio.h>
-#include <string.h>
-
 int main(void)
 {
     char str[] = "eglendiremediklerimizdenmisiniz";
@@ -53,8 +45,4 @@ int main(void)
     printf("O: %s\n", dest);
 	printf("O: %s", memcpy(dest,str,8));
 }
-*/
-/*
-n sıfır olana kadar döner ve
-dest'e src de ki karakterleri atar.
 */

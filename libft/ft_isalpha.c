@@ -6,7 +6,7 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 13:02:57 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/07 13:03:00 by ehazir           ###   ########.tr       */
+/*   Updated: 2022/02/24 12:50:45 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,3 @@ int	ft_isalpha(int str)
 		return (0);
 	return (1);
 }
-
-/*
-#include <stdio.h>
-int	main()
-{
-	printf("%d", ft_isalpha('Z'));
-}
-*/

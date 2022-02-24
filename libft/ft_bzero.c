@@ -6,40 +6,26 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 11:01:30 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/07 14:35:12 by ehazir           ###   ########.tr       */
+/*   Updated: 2022/02/24 12:49:28 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"libft.h"
 /*
-Bellekte n kadar s baytındaki verileri siler. '\0' (null) alana kadar.
+Bellekte n kadar s baytındaki verileri siler.
 */
 
-void	ft_bzero(void *s, size_t n)
+void	*ft_bzero(void *s, size_t n)
 {
-	size_t			i;
-	unsigned char	*byt;
+	size_t	i;
+	char	*str;
 
 	i = 0;
-	byt = (unsigned char *)s;
+	str = (char *)s;
 	while (i < n)
 	{
-		byt[i] = 0;
+		str[i] = '\0';
 		i++;
 	}
-	s = byt;
+	return (str);
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main()
-{
-    char str[] = "eglendiremediklerimizdenmisiniz";
-
-    ft_bzero(str, 15);
-    printf(": %s", str);
-    printf("\n: %s", bzero(str, 18));
-}
-*/

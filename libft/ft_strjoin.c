@@ -6,7 +6,7 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 16:15:43 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/15 11:23:13 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/24 13:01:19 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*
 - Gönderilen değerlerin uzunluğunun toplamı kadar ve sizeof(char) karşılığı kadar
-bellekte yer ayır. Yani bu betikte, '12' uzunluğunda yer ayırır.
+bellekte yer ayır.
 - Gönderilen değerleri birleştirir ve döndürür.
 */
 
@@ -50,8 +50,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 #include <string.h>
 int main()
 {
-    char str[] = "Ferdi";
-    char str2[] = " TAYFUR";
+    char str[] = "Leyla";
+    char str2[] = "& Mecnun";
     printf("%lu\n", sizeof(int) * 11 + 1);
     printf("%s\n", ft_strjoin(str, str2));
 }

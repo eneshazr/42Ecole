@@ -6,7 +6,7 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 13:03:33 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/07 14:37:37 by ehazir           ###   ########.tr       */
+/*   Updated: 2022/02/24 13:15:11 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,3 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
-
-/*
-int main()
-{
-    printf("%c",ft_toupper('a'));
-}
-*/

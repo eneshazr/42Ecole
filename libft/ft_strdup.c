@@ -6,11 +6,15 @@
 /*   By: ehazir <eneshazrr@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 13:39:22 by ehazir            #+#    #+#             */
-/*   Updated: 2022/02/11 15:50:27 by ehazir           ###   ########.fr       */
+/*   Updated: 2022/02/22 12:42:18 by ehazir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+Gönderdiğimiz stringi üreterek aynısını döndürür.
+*/
 
 char	*ft_strdup(const char *s1)
 {

@@ -50,21 +50,6 @@ char	*get_next_line(int fd)
 	left_str = ft_new_left_str(left_str);
 	return (line);
 }
-
-/*
-int	main(void)
-{
-	int i = 0;
-	char *line;
-	int fd;
-	
-	char *veri = "asd\nsdadsa\nferdi\ntayfur";
-	fd = open("asd.txt", O_RDONLY);
-	line = get_next_line(fd);
-
-	write(fd, veri, strlen(veri));
-}
-*/
 /*
 int	main(void)
 {

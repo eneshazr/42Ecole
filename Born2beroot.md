@@ -197,6 +197,7 @@ Crontab
 
 > */10 * * * * /usr/local/bin/monitoring.sh
 
+___
 
 # BONUS
 ## Kullanacağımız servisleri kuralım

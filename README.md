@@ -5,3 +5,5 @@
   <img width="235" alt="Ekran Resmi 2022-03-01 ÖS 5 16 22" src="https://user-images.githubusercontent.com/84662757/156185519-5c4c5298-67cc-480d-8fcb-c437f17d24b4.png">
 <h2>ft_printf<h2>
   <img width="225" alt="Ekran Resmi 2022-03-09 ÖS 5 05 54" src="https://user-images.githubusercontent.com/84662757/157457608-73c59895-fd31-482c-8333-6a0ca7061872.png">
+<h2>minitalk<h2>
+  <img width="218" alt="Ekran Resmi 2022-04-29 ÖÖ 10 08 39" src="https://user-images.githubusercontent.com/84662757/165899549-a2dd77af-abaa-4c52-bda9-17377ca985d0.png">

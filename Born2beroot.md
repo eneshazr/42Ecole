@@ -150,7 +150,9 @@ PASS_WARN_AGE 7       =       Değişikliğe son 7 gün kala uyarı ver
 > apt-get update -y
 
 > apt-get install -y net-tools
+
 /usr/local/bin/ yolunda monitoring.sh dosyası oluştur
+
 > nano monitoring.sh
 
 <pre>
@@ -190,8 +192,11 @@ wall "
 </pre>
 
 Sudoers dosyasına, sudo parolası istemeden uygulayacağı kuralı ekliyoruz
+
 > visudo
-username ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh
+
+> username ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh
+
 Crontab
 > crontab -u root -e
 

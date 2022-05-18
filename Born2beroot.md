@@ -1,5 +1,6 @@
-Tüm işlemleri 'su -' komutu içerisinde yapın. su dan çıkmak için 'exit' yazın.
+#### [Evaluation Soru-Cevap](https://github.com/yazilimfuryasi/42Ecole/blob/main/B2bSoru-Cevap.md)
 
+Tüm işlemleri 'su -' komutu içerisinde yapın. su dan çıkmak için 'exit' yazın.
 
 > su -
 
@@ -287,3 +288,6 @@ vsftpd.userlist dosyasını oluştur
 kullanıcı adını içine yaz.
 
 Tarayıcınıza localhost:8080 yada 127.0.0.1:8080 yazarak wordpress kurulumunu tamamlayın ve projenizi bitirin.
+
+
+#### [Evaluation Soru-CevapSoru-Cevap](https://github.com/yazilimfuryasi/42Ecole/blob/main/B2bSoru-Cevap.md)

@@ -1,3 +1,5 @@
+#### [Kurulum](https://github.com/yazilimfuryasi/42Ecole/blob/main/Born2beroot.md)
+
 ## Born2Beroot Projesi Evaluation Soruları ve Kısa Cevapları
 
 ##### 1. Seçtiğin işletim sistemi nedir?

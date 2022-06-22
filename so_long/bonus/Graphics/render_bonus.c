@@ -47,7 +47,6 @@ void	display_counter_window(t_data *data)
 	steps_count = ft_itoa(data->steps_count);
 	mlx_string_put(data->mlx, data->win, 45, 20, 0x00FF0000, "Toplam Hareket:");
 	mlx_string_put(data->mlx, data->win, 180, 20, 0x0000FF00, steps_count);
-	mlx_string_put(data->mlx, data->win, 1025, 180, 0x00FF00FF, "nosamanz");
 	if (steps_count)
 		free(steps_count);
 }
